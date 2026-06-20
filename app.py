@@ -1,4 +1,4 @@
-# changes made in the py file
+# changes made in python file for linting check
 from flask import Flask, render_template
 app = Flask(__name__)
 
