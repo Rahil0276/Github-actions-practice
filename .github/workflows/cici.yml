@@ -1,0 +1,21 @@
+name: cici
+
+on: 
+  workflow_dispatch:
+jobs:
+  code:
+    runs-on ubuntu-latest
+    steps:
+      -name: clone the code
+      run: echo "cloning the code"
+
+  build:
+    needs: [code]
+    runs-on ubuntu-latest
+    steps:
+    -name: build using docker
+      run: echo "Building using docker"
+
+  test
+
+  
